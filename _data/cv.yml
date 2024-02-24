@@ -13,22 +13,17 @@
   contents:
     - title: PhD
       institution: Purdue University, West Lafayette IN, USA
-      year: 2024 - 2029
+      year: 2024 - 2029 (Expceted)
       description:
         - Co-Advised by Prof. Gupta and Prof. Hashemi
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
     - title: B.Sc.
       institution: Sharif University of Technology, Tehran, Iran
-      year: 2018 - 2024
+      year: 2018 - 2024 (Expceted)
       description:
         - Electrical Engineering, with Network and Communications Systems branch (GPA of 3.80)
         - Minoring in Applied Mathematics
-        - Bachelor Thesis':' Sensor Fusion of Radar and Camera for Autonomous cars (Supervisor':' Dr. Fotoeat)
-        - Selected Courses -> Deep Learning, Neuroscience, Statistical Learning, Convex Optimization, OO Programming
+        - Bachelor Thesis":" Sensor Fusion of Radar and Camera for Autonomous cars (Supervisor":" Dr. Fotowat)
+        - Selected Courses ":" Deep Learning, Neuroscience, Statistical Learning, Convex Optimization, OO Programming
 
 - title: Experience
   type: time_table
@@ -37,18 +32,21 @@
       institution: Electrical Engineering Department, Sharif University of Technology
       year: 2021 - 2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Have done research in the fields of Machine Learning, Deep Learning, Computer Vision, and Multimodal Learning
+        - I was active in AICD Lab at EE Department from 2022 to 2024
+    - title: Data Scientist Intern at MCI Next
+      institution: MCI Next, Tehran, Iran
+      year: 2023
       description:
-        - Description 1.
-        - Description 2.
+        - I did research in Recommender Systems and LLMs.
+        - Also I had pleasure to work with great advisors and teammates!
+    - title: Machine Learning Engineer Intern at Kavoshcom Asia R&D
+      institution: Kaoshcom Asia R&D, Tehran, Iran
+      year: 2022
+      description:
+        - I worked on face authentication algorithms on light weight computers, such as orange PI 3
+        - I had the chance to work on my coding skills, and learn how to code more professionally
+
 
     - title: Director
       institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
