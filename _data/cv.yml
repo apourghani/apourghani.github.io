@@ -2,38 +2,40 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Aliasghar (Amin) Pourghani
     - name: Date of Birth
-      value: 14th March 1879
+      value: 3rd Nov 2000
     - name: Languages
-      value: English, German
+      value: English, Azerbaijani, Persian
 
 - title: Education
   type: time_table
   contents:
     - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+      institution: Purdue University, West Lafayette IN, USA
+      year: 2024 - 2029
       description:
-        - Description 1.
+        - Co-Advised by Prof. Gupta and Prof. Hashemi
         - Description 2.
         - title: Description 3.
           contents:
             - Sub-description 1.
             - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+    - title: B.Sc.
+      institution: Sharif University of Technology, Tehran, Iran
+      year: 2018 - 2024
       description:
-        - Description 1.
-        - Description 2.
+        - Electrical Engineering, with Network and Communications Systems branch (GPA of 3.80)
+        - Minoring in Applied Mathematics
+        - Bachelor Thesis: Sensor Fusion of Radar and Camera for Autonomous cars (Supervisor: Dr. Fotowat)
+        - Selected Courses: Deep Learning, Neuroscience, Statistical Learning, Convex Optimization, OO Programming
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research Assistant
+      institution: Electrical Engineering Department, Sharif University of Technology
+      year: 2021 - 2023
       description:
         - Description 1.
         - Description 2.
