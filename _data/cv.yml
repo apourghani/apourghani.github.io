@@ -22,8 +22,8 @@
       description:
         - Electrical Engineering, with Network and Communications Systems branch (GPA of 3.80)
         - Minoring in Applied Mathematics
-        - "Bachelor Thesis : Sensor Fusion of Radar and Camera for Autonomous cars (Supervisor":" Dr. Fotowat)"
-        - "Selected Courses : Deep Learning, Neuroscience, Statistical Learning, Convex Optimization, OO Programming"
+        - Bachelor Thesis -> Sensor Fusion of Radar and Camera for Autonomous cars (Supervisor":" Dr. Fotowat)
+        - Selected Courses -> Deep Learning, Neuroscience, Statistical Learning, Convex Optimization, OO Programming
 
 - title: Experience
   type: time_table
@@ -51,27 +51,27 @@
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+  - year: 2019
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Ranked 53 out of +160000 applicants in Iranian University Entrance Exame, Konkur
+    - year: 2018
       items:
-        - Max Planck Medal
-
+        - Mathematics Olympiad Silver Medal in National Olympiad of Mathematics, Iran
+    - year: 2017
+      items:
+        - Mathematics Olympiad Honors Diploma in National Olympiad of Mathematics, Iran
+        
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Machine Learning.
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+        - Unsupervied Learning
+        - Generative Models
+        - NLP
+        - Computer Vision
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Basketball, Playing Guitar, Reading Books, Hanging out with Friends!, Watching Good Series.
