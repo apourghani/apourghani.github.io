@@ -52,18 +52,18 @@
   contents:
     - year: 2019
       items:
-        - Ranked 53 out of +160000 applicants in Iranian University Entrance Exame Konkur
+        - Ranked 53 out of +160000 applicants, University Entrance exam(Konkur), Iran
     - year: 2018
       items:
-        - Mathematics Olympiad Silver Medal in National Olympiad of Mathematics Iran
+        - Silver Medal, National Olympiad of Mathematics, Iran
     - year: 2017
       items:
-        - Mathematics Olympiad Honors Diploma in National Olympiad of Mathematics Iran
+        - Honors Diploma, National Olympiad of Mathematics, Iran
         
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Machine Learning.
+    - title: Machine Learning, Deep Learning
       items:
         - Unsupervied Learning
         - Generative Models
@@ -73,4 +73,4 @@
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Basketball, Playing Guitar, Reading Books, Hanging out with Friends!, Watching Good Series.
+    - <u>Hobbies:</u> Basketball, Playing Guitar, Reading Books, Watching Series, Hanging out with Friends!
