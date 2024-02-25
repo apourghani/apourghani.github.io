@@ -71,7 +71,7 @@ github_username: apourghani # your GitHub user name
 gitlab_username: # your GitLab user name
 x_username: # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: apourghani # your LinkedIn user name
+linkedin_username: aliasghar-pourghani-aa42a9202 # your LinkedIn user name
 telegram_username: Amin_Pourghani # your Telegram user name
 scholar_userid:  # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
@@ -124,7 +124,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: apourghani # blog_name will be displayed in your blog page
-blog_description: Amin's Personal Website
+blog_description: "Amin's Personal Website"
 permalink: /blog/:year/:title/
 
 # Pagination
