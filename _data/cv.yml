@@ -47,7 +47,11 @@
         - I worked on face authentication algorithms on light weight computers, such as orange PI 3
         - I had the chance to work on my coding skills, and learn how to code more professionally
 
-
+- title: Open Source Projects
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+    
 - title: Honors and Awards
   type: time_table
   contents:
