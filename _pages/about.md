@@ -28,6 +28,6 @@ I was born in Salmas, a small town near Iran’s northwestern border. Since then
 
 My background brings together mathematics, engineering, and machine learning. My research interests include reinforcement learning, optimization, LLM post training, and imitation learning.
 
-Outside research, I enjoy playing guitar, reading books, watching series, and spending time with friends. I speak Azerbaijani, Persian, and English, so feel free to say hello in any of them.
+Outside research, I enjoy playing guitar, reading books, watching series and movies, traveling, spending time in nature, and spending time with friends. I speak Azerbaijani, Persian, and English, so feel free to say hello in any of them.
 
 This website is a place for my research, projects, and occasional thoughts. Some things here will be finished; others will still be taking shape. That seems like a fair introduction to research—and to me.
