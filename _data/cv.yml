@@ -29,27 +29,24 @@
   type: time_table
   contents:
     - title: Research Assistant
+      institution: Elmore Family School of Electrical and Computer Engineering, Purdue University
+      year: 2024 - Present
+      description:
+        - Advised by Prof. Gupta and Prof. Hashemi
+        - Research interests include reinforcement learning, optimization, LLM post training, and imitation learning
+    - title: Research Assistant
       institution: Electrical Engineering Department, Sharif University of Technology
       year: 2021 - 2023
       description:
         - Have done research in the fields of Machine Learning, Deep Learning, Computer Vision, and Multimodal Learning
         - I was active in AICD Lab at EE Department from 2022 to 2024
-    - title: Data Scientist Intern at MCI Next
-      institution: MCI Next, Tehran, Iran
-      year: 2023 Summer
-      description:
-        - I did research in Recommender Systems and LLMs.
-        - Also I had pleasure to work with great advisors and teammates!
-    - title: Machine Learning Engineer Intern at Kavoshcom Asia R&D
-      institution: Kaoshcom Asia R&D, Tehran, Iran
-      year: 2022 Summer
-      description:
-        - I worked on face authentication algorithms on light weight computers, such as orange PI 3
-        - I had the chance to work on my coding skills, and learn how to code more professionally
 
 - title: Honors and Awards
   type: time_table
   contents:
+    - year: 2024
+      items:
+        - Admitted to Purdue University's PhD program
     - year: 2019
       items:
         - Ranked 53 out of +160000 applicants, University Entrance exam(Konkur), Iran
@@ -65,12 +62,12 @@
   contents:
     - title: Machine Learning, Deep Learning
       items:
-        - Unsupervied Learning
-        - Generative Models
-        - NLP
-        - Computer Vision
+        - Reinforcement Learning
+        - Optimization
+        - LLM post training
+        - Imitation learning
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Basketball, Playing Guitar, Reading Books, Watching Series, Hanging out with Friends!
+    - <u>Hobbies:</u> Playing Guitar, Reading Books, Watching Series, Hanging out with Friends!
