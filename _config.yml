@@ -7,6 +7,7 @@ first_name: Aliasghar (Amin)
 middle_name: 
 last_name: Pourghani
 email: apourghani@gmail.com
+academic_email: apourgha@purdue.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Amin''s Personal Website
 footer_text: >
@@ -71,11 +72,11 @@ github_username: apourghani # your GitHub user name
 gitlab_username: # your GitLab user name
 x_username: # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: aliasghar-pourghani-aa42a9202 # your LinkedIn user name
+linkedin_username: amin-pourghani-aa42a9202 # your LinkedIn user name
 telegram_username: Amin_Pourghani # your Telegram user name
-scholar_userid:  # your Google Scholar ID
+scholar_userid: PWvTEYgAAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
-whatsapp_number: +989146787848 # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
+whatsapp_number: "17655324440" # your WhatsApp number, including country code, with digits only
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
