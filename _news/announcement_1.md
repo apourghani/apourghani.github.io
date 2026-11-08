@@ -1,8 +1,10 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+title: Admitted to Purdue's PhD program
+date: 2024-01-01 00:00:00-0500
+date_label: "2024"
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+I was admitted to Purdue University's PhD program!
