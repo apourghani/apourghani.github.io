@@ -36,10 +36,10 @@
         - Research interests include reinforcement learning, optimization, LLM post training, and imitation learning
     - title: Research Assistant
       institution: Electrical Engineering Department, Sharif University of Technology
-      year: 2021 - 2023
+      year: 2022 - 2023
       description:
         - Have done research in the fields of Machine Learning, Deep Learning, Computer Vision, and Multimodal Learning
-        - I was active in AICD Lab at EE Department from 2022 to 2024
+        - I was active in AICD Lab at EE Department from 2022 to 2023
 
 - title: Honors and Awards
   type: time_table
@@ -61,13 +61,12 @@
   type: nested_list
   contents:
     - title: Machine Learning, Deep Learning
-      items:
-        - Reinforcement Learning
-        - Optimization
-        - LLM post training
-        - Imitation learning
+    - title: Reinforcement Learning
+    - title: Optimization
+    - title: LLM post training
+    - title: Imitation learning
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Playing Guitar, Reading Books, Watching Series, Hanging out with Friends!
+    - <u>Hobbies:</u> Playing Guitar, Reading Books, Watching Series, Watching Movies, Traveling, Spending Time in Nature, Hanging out with Friends!
