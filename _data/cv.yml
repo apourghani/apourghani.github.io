@@ -68,14 +68,6 @@ education:
     degree: BSc in Electrical Engineering (18.03/20)
     detail: Minor in Applied Mathematics (19.23/20).
 
-coursework:
-  - Reinforcement Learning
-  - Deep Learning (Graduate)
-  - Statistical Machine Learning
-  - Convex Optimization
-  - Optimization for Deep Learning
-  - Real Analysis
-
 skills:
   - area: Programming
     tools: Python, C/C++, Java
