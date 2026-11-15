@@ -11,6 +11,9 @@ img: "https://arxiv.org/html/2608.22765v1/gridworld_moment_ground_truth.png"
 img_alt: "Joint moment control and action correlations in a windy gridworld"
 importance: 3
 category: research
+venue: arXiv
+year: 2026
+paper_url: https://arxiv.org/abs/2608.22765v1
 ---
 
 <figure>
@@ -20,4 +23,4 @@ category: research
 
 Ege C. Kaya, Aliasghar Pourghani, Mahsa Ghasemi, Vijay Gupta, and Abolfazl Hashemi
 
-[arXiv](https://arxiv.org/abs/2608.22765v1) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+[arXiv]({{ page.paper_url }}) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
