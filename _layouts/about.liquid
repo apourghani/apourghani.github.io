@@ -40,6 +40,23 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
+    {% if page.featured_research %}
+      {% assign featured_papers = site.projects | where: 'featured', true | sort: 'importance' %}
+      <section class="mt-4 mb-4" aria-labelledby="featured-research-heading">
+        <h2 id="featured-research-heading">Featured research</h2>
+        <ul class="list-unstyled mb-2">
+          {% for paper in featured_papers %}
+            <li class="mb-3">
+              <h3 class="h5 mb-1"><a href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a></h3>
+              <p class="mb-1">{{ paper.summary | escape }}</p>
+              <p class="mb-0">{{ paper.venue | escape }} {{ paper.year }} · <a href="{{ paper.paper_url }}" aria-label="Paper: {{ paper.title | escape }}">Paper</a></p>
+            </li>
+          {% endfor %}
+        </ul>
+        <a href="{{ '/projects/' | relative_url }}">View all research</a>
+      </section>
+    {% endif %}
+
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
       <h2>
