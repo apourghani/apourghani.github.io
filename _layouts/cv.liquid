@@ -1,117 +1,119 @@
 ---
 layout: default
 ---
-{% unless site.data.resume %}
-  <div class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        {{ page.title }}
-        {% if page.cv_pdf %}
-          <a
-            href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="float-right"
-            ><i class="fa-solid fa-file-pdf"></i
-          ></a>
-        {% endif %}
-      </h1>
-      {% if page.description %}
-        <p class="post-description">{{ page.description }}</p>
-      {% endif %}
-    </header>
-
-    <article>
-      <div class="cv">
-        {% for entry in site.data.cv %}
-          <a class="anchor" id="{{ entry.title }}"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
-            <div>
-              {% if entry.type == 'list' %}
-                {% include cv/list.liquid %}
-              {% elsif entry.type == 'map' %}
-                {% include cv/map.liquid %}
-              {% elsif entry.type == 'nested_list' %}
-                {% include cv/nested_list.liquid %}
-              {% elsif entry.type == 'time_table' %}
-                {% include cv/time_table.liquid %}
-              {% elsif entry.type == 'list_groups' %}
-                {% include cv/list_groups.liquid %}
-              {% else %}
-                {{ entry.contents }}
-              {% endif %}
-            </div>
-          </div>
-        {% endfor %}
+{% assign cv = site.data.cv %}
+<article class="research-cv" aria-labelledby="cv-name">
+  <header class="research-cv__header">
+    <div class="research-cv__intro">
+      <div>
+        <h1 id="cv-name">{{ cv.name | escape }}</h1>
+        <p class="research-cv__position">{{ cv.position | escape }}</p>
       </div>
-    </article>
-  </div>
-{% else %}
-  <div class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        {{ page.title }}
-        {% if page.cv_pdf %}
-          <a
-            href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="float-right"
-            ><i class="fa-solid fa-file-pdf"></i
-          ></a>
-        {% endif %}
-      </h1>
-      {% if page.description %}
-        <p class="post-description">{{ page.description }}</p>
+      {% if page.cv_pdf %}
+        <a class="research-cv__download" href="{{ page.cv_pdf | prepend: '/assets/pdf/' | relative_url }}" download>Download CV (PDF)</a>
       {% endif %}
-    </header>
+    </div>
+    <p class="research-cv__focus">{{ cv.focus | escape }}</p>
+    <ul class="research-cv__contacts">
+      {% if site.email %}
+        <li><a href="mailto:{{ site.email | escape }}">{{ site.email | escape }}</a></li>
+      {% endif %}
+      {% if site.scholar_userid %}
+        <li><a href="https://scholar.google.com/citations?user={{ site.scholar_userid | escape }}">Google Scholar</a></li>
+      {% endif %}
+      {% if site.linkedin_username %}
+        <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username | escape }}/">LinkedIn</a></li>
+      {% endif %}
+    </ul>
+  </header>
 
-    <article>
-      <div class="cv">
-        {% for data in site.data.resume %}
-          {% if site.jsonresume and site.jsonresume.size > 0 %}
-            {% unless site.jsonresume contains data[0] %}
-              {% continue %}
-            {% endunless %}
+  <section class="research-cv__section" aria-labelledby="cv-publications">
+    <h2 id="cv-publications">Selected publications</h2>
+    <ol class="research-cv__entries">
+      {% for paper in cv.publications %}
+        <li>
+          <h3><a href="https://arxiv.org/abs/{{ paper.arxiv }}">{{ paper.title | escape }}</a></h3>
+          <p class="research-cv__meta">
+            {% for author in paper.authors %}
+              {%- if author == cv.publication_name -%}
+                <strong>{{ author | escape }}</strong>
+              {%- else -%}
+                {{ author | escape }}
+              {%- endif -%}
+              {%- if paper.joint_first_count and forloop.index <= paper.joint_first_count -%}
+                <sup aria-label="joint first author">*</sup>
+              {%- endif -%}
+              {%- unless forloop.last %}, {% endunless -%}
+            {% endfor %}
+          </p>
+          <p class="research-cv__citation">
+            {% if paper.venue %}<strong>{{ paper.venue | escape }}</strong> · {% endif %}
+            arXiv:{{ paper.arxiv }}
+            {% if paper.joint_first_count %} · <span>*Joint first authors</span>{% endif %}
+          </p>
+        </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section class="research-cv__section" aria-labelledby="cv-research">
+    <h2 id="cv-research">Research experience</h2>
+    <ul class="research-cv__entries">
+      {% for entry in cv.research %}
+        <li>
+          <div class="research-cv__entry-heading">
+            <h3>{{ entry.title | escape }}, {{ entry.institution | escape }}</h3>
+            <p class="research-cv__date">{{ entry.dates | escape }}</p>
+          </div>
+          {% if entry.description %}<p>{{ entry.description | escape }}</p>{% endif %}
+          {% if entry.contributions %}
+            <ul class="research-cv__contributions">
+              {% for contribution in entry.contributions %}
+                <li><strong>{{ contribution.topic | escape }}.</strong> {{ contribution.description | escape }}</li>
+              {% endfor %}
+            </ul>
           {% endif %}
-          {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
-          <a class="anchor" id="{{ data[0] }}"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
-            <div>
-              {% case data[0] %}
-                {% when 'basics' %}
-                  {% include resume/basics.liquid %}
-                {% when 'education' %}
-                  {% include resume/education.liquid %}
-                {% when 'work' %}
-                  {% include resume/work.liquid %}
-                {% when 'volunteer' %}
-                  {% include resume/volunteer.liquid %}
-                {% when 'projects' %}
-                  {% include resume/projects.liquid %}
-                {% when 'awards' %}
-                  {% include resume/awards.liquid %}
-                {% when 'skills' %}
-                  {% include resume/skills.liquid %}
-                {% when 'publications' %}
-                  {% include resume/publications.liquid %}
-                {% when 'languages' %}
-                  {% include resume/languages.liquid %}
-                {% when 'interests' %}
-                  {% include resume/interests.liquid %}
-                {% when 'certificates' %}
-                  {% include resume/certificates.liquid %}
-                {% when 'references' %}
-                  {% include resume/references.liquid %}
-                {% else %}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
 
-              {% endcase %}
-            </div>
+  <section class="research-cv__section" aria-labelledby="cv-education">
+    <h2 id="cv-education">Education</h2>
+    <ul class="research-cv__entries">
+      {% for entry in cv.education %}
+        <li>
+          <div class="research-cv__entry-heading">
+            <h3>{{ entry.institution | escape }}</h3>
+            <p class="research-cv__date">{{ entry.dates | escape }}</p>
           </div>
-        {% endfor %}
-      </div>
-    </article>
-  </div>
-{% endunless %}
+          <p>{{ entry.degree | escape }}</p>
+          <p class="research-cv__meta">{{ entry.location | escape }} · {{ entry.detail | escape }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+    <p class="research-cv__coursework"><strong>Selected coursework</strong> {{ cv.coursework | join: ', ' | escape }}</p>
+  </section>
+
+  <section class="research-cv__section" aria-labelledby="cv-skills">
+    <h2 id="cv-skills">Technical skills</h2>
+    <dl class="research-cv__skills">
+      {% for skill in cv.skills %}
+        <dt>{{ skill.area | escape }}</dt>
+        <dd>{{ skill.tools | escape }}</dd>
+      {% endfor %}
+    </dl>
+  </section>
+
+  <section class="research-cv__section" aria-labelledby="cv-honors">
+    <h2 id="cv-honors">Honors</h2>
+    <ul class="research-cv__entries">
+      {% for honor in cv.honors %}
+        <li class="research-cv__entry-heading">
+          <p>{{ honor.title | escape }}</p>
+          <p class="research-cv__date">{{ honor.dates | escape }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+</article>
