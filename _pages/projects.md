@@ -9,11 +9,7 @@ nav_order: 3
 
 {% assign research_projects = site.projects | where: "category", "research" | sort: "importance" %}
 <div class="projects">
-  <div class="container">
-    <div class="row row-cols-1">
-      {% for project in research_projects %}
-        {% include projects_horizontal.liquid %}
-      {% endfor %}
-    </div>
-  </div>
+  {% for project in research_projects %}
+    {% include projects_horizontal.liquid %}
+  {% endfor %}
 </div>
