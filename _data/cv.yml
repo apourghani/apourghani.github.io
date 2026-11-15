@@ -1,72 +1,89 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Aliasghar (Amin) Pourghani
-    - name: Date of Birth
-      value: 3rd Nov 2000
-    - name: Languages
-      value: English, Azerbaijani, Persian
+name: Aliasghar Pourghani Tazehshahri
+publication_name: Aliasghar Pourghani
+position: PhD researcher in Electrical and Computer Engineering at Purdue University
+focus: Reinforcement learning, knowledge distillation, and LLM inference and evaluation
 
-- title: Education
-  type: time_table
-  contents:
-    - title: PhD
-      institution: Purdue University, West Lafayette IN, USA
-      year: 2024 - 2029
-      description:
-        - Co-Advised by Prof. Gupta and Prof. Hashemi
-    - title: B.Sc.
-      institution: Sharif University of Technology, Tehran, Iran
-      year: 2018 - 2024
-      description:
-        - Electrical Engineering, with Network and Communications Systems branch (GPA of 3.80)
-        - Minoring in Applied Mathematics
-        - Bachelor Thesis -> Sensor Fusion of Radar and Camera for Autonomous cars (Supervisor":" Dr. Fotowat)
-        - Selected Courses -> Deep Learning, Neuroscience, Statistical Learning, Convex Optimization, OO Programming
+publications:
+  - title: Quotient-Categorical Representations for Bellman-Compatible Average-Reward Distributional Reinforcement Learning
+    authors:
+      - Ege C. Kaya
+      - Aliasghar Pourghani
+      - Vijay Gupta
+      - Abolfazl Hashemi
+    venue: NeurIPS 2026 (accepted)
+    arxiv: "2605.11289"
 
-- title: Experience
-  type: time_table
-  contents:
-    - title: Research Assistant
-      institution: Elmore Family School of Electrical and Computer Engineering, Purdue University
-      year: 2024 - Present
-      description:
-        - Advised by Prof. Gupta and Prof. Hashemi
-        - Research interests include reinforcement learning, optimization, LLM post training, and imitation learning
-    - title: Research Assistant
-      institution: Electrical Engineering Department, Sharif University of Technology
-      year: 2022 - 2023
-      description:
-        - Have done research in the fields of Machine Learning, Deep Learning, Computer Vision, and Multimodal Learning
-        - I was active in AICD Lab at EE Department from 2022 to 2023
+  - title: "Free Lunch Uncertainty: Sequence-Level Rényi Entropy from Particle Decoding for Adaptive LLM Reasoning"
+    authors:
+      - Aliasghar Pourghani
+      - Erfan Baghaei Potraghloo
+      - Milad Heidari Sorkhehdizaj
+      - Shahab Rahimirad
+      - Seyedarmin Azizi
+      - Souvik Kundu
+      - Abolfazl Hashemi
+      - Joseph Campbell
+      - Vijay Gupta
+    joint_first_count: 4
+    arxiv: "2611.13414"
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 2024
-      items:
-        - Admitted to Purdue University's PhD program
-    - year: 2019
-      items:
-        - Ranked 53 out of +160000 applicants, University Entrance exam(Konkur), Iran
-    - year: 2018
-      items:
-        - Silver Medal, National Olympiad of Mathematics, Iran
-    - year: 2017
-      items:
-        - Honors Diploma, National Olympiad of Mathematics, Iran
-        
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Machine Learning, Deep Learning
-    - title: Reinforcement Learning
-    - title: Optimization
-    - title: LLM post training
-    - title: Imitation learning
+  - title: Learning to Control Coupled-Dynamics Environments with Joint Markov Decision Processes
+    authors:
+      - Ege C. Kaya
+      - Aliasghar Pourghani
+      - Mahsa Ghasemi
+      - Vijay Gupta
+      - Abolfazl Hashemi
+    arxiv: "2608.22765"
 
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Playing Guitar, Reading Books, Watching Series, Watching Movies, Traveling, Spending Time in Nature, Hanging out with Friends!
+research:
+  - title: Research Assistant
+    institution: Purdue University
+    dates: 2024–Present
+    contributions:
+      - topic: Knowledge distillation (ongoing)
+        description: Study on-policy knowledge distillation for LLMs, using teacher predictions to train the student on responses it generates.
+      - topic: Average-reward distributional reinforcement learning
+        description: Developed a quotient-categorical representation for bias distributions. Proved nonexpansiveness of the projected Bellman operator in a Cramér metric, established fixed-point existence, and proved convergence guarantees for sampled temporal-difference updates.
+      - topic: Control under coupled dynamics
+        description: Analyzed when distributional Bellman updates converge in Wasserstein distance to the optimal joint return law. Derived sample-based targets for estimating the first two joint return moments with neural networks.
+      - topic: Adaptive LLM inference
+        description: Designed a two-pass decoding policy for Qwen2.5-Math-7B that matched the 64-particle baseline’s mean MATH500 accuracy of 76.6% with 27.5% fewer particles across three seeds at the same escalation rate. Estimated sequence-level Rényi entropy from existing sequential Monte Carlo weights without extra model calls.
+
+  - title: Research Assistant
+    institution: Sharif University of Technology
+    dates: 2022–2023
+    description: Studied computer vision and multimodal learning in the AICD Lab.
+
+education:
+  - institution: Purdue University
+    location: West Lafayette, IN
+    dates: Aug. 2024–Present
+    degree: PhD in Electrical and Computer Engineering
+    detail: Expected 2029. Advised by Vijay Gupta and Abolfazl Hashemi.
+
+  - institution: Sharif University of Technology
+    location: Tehran, Iran
+    dates: 2019–2024
+    degree: BSc in Electrical Engineering (18.03/20)
+    detail: Minor in Applied Mathematics (19.23/20).
+
+coursework:
+  - Reinforcement Learning
+  - Deep Learning (Graduate)
+  - Statistical Machine Learning
+  - Convex Optimization
+  - Optimization for Deep Learning
+  - Real Analysis
+
+skills:
+  - area: Programming
+    tools: Python, C/C++, Java
+  - area: ML and tools
+    tools: PyTorch, TensorFlow, NumPy, pandas, PPO, MuJoCo, Docker, Linux
+
+honors:
+  - title: Silver Medal, Iranian National Mathematics Olympiad
+    dates: "2018"
+  - title: Ranked 53rd among 160,000+ applicants, Iranian university entrance exam
+    dates: "2019"
