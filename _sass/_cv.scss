@@ -325,8 +325,7 @@ ul.timeline li::before {
 
   &__meta,
   &__date,
-  &__citation,
-  &__coursework {
+  &__citation {
     color: var(--cv-muted);
     font-size: 0.91rem;
   }
@@ -346,10 +345,6 @@ ul.timeline li::before {
     li + li {
       margin-top: 0.4rem;
     }
-  }
-
-  p.research-cv__coursework {
-    margin-top: 0.9rem;
   }
 
   &__skills {
