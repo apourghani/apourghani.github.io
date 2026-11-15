@@ -1,7 +1,6 @@
 name: Aliasghar Pourghani Tazehshahri
 publication_name: Aliasghar Pourghani
 position: PhD researcher in Electrical and Computer Engineering at Purdue University
-focus: Reinforcement learning, knowledge distillation, and LLM inference and evaluation
 
 publications:
   - title: Quotient-Categorical Representations for Bellman-Compatible Average-Reward Distributional Reinforcement Learning

@@ -280,20 +280,6 @@ ul.timeline li::before {
     font-size: 1.02rem;
   }
 
-  &__focus {
-    padding-top: 0.6rem;
-  }
-
-  &__contacts {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.3rem 1.25rem;
-    margin: 0.65rem 0 0;
-    padding: 0;
-    list-style: none;
-    font-size: 0.92rem;
-  }
-
   &__download {
     display: inline-block;
     padding: 0.42rem 0.8rem;

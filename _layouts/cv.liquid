@@ -17,18 +17,6 @@ layout: default
         >Download CV (PDF)</a>
       {% endif %}
     </div>
-    <p class="research-cv__focus">{{ cv.focus | escape }}</p>
-    <ul class="research-cv__contacts">
-      {% if site.email %}
-        <li><a href="mailto:{{ site.email | escape }}">{{ site.email | escape }}</a></li>
-      {% endif %}
-      {% if site.scholar_userid %}
-        <li><a href="https://scholar.google.com/citations?user={{ site.scholar_userid | escape }}">Google Scholar</a></li>
-      {% endif %}
-      {% if site.linkedin_username %}
-        <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username | escape }}/">LinkedIn</a></li>
-      {% endif %}
-    </ul>
   </header>
 
   <section class="research-cv__section" aria-labelledby="cv-publications">
