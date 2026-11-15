@@ -7,11 +7,15 @@ description: >-
   We show that the means of the projected fixed points match the scalar bias up to an error caused by endpoint clipping of the categorical projections, and we bound this error. Finally, we establish almost-sure convergence and finite-iteration residual bounds for temporal-difference recursions with gain-centered rewards under i.i.d. and Markovian sampling.
   When the gain is unknown, we couple the recursion with an online gain estimator and prove the same guarantees under Markovian sampling, with a bound on the gain error.
 summary: >-
-  We use a quotient-categorical representation to model differential returns in average-reward reinforcement learning. It respects the common-shift ambiguity of the bias, and we prove convergence of the resulting temporal-difference updates even when the average reward is estimated online.
+  We prove that temporal-difference updates for a quotient-categorical model of differential returns converge even when the average reward is estimated online.
 img: "https://arxiv.org/html/2605.11289v2/fig2_convergence.svg"
 img_alt: "Convergence of categorical temporal-difference learning in a five-state Markov decision process"
 importance: 2
 category: research
+featured: true
+venue: NeurIPS
+year: 2026
+paper_url: https://arxiv.org/abs/2605.11289v2
 ---
 
 <figure>
@@ -21,4 +25,4 @@ category: research
 
 Ege C. Kaya, Aliasghar Pourghani, Vijay Gupta, and Abolfazl Hashemi
 
-NeurIPS 2026 · [arXiv](https://arxiv.org/abs/2605.11289v2) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+{{ page.venue }} {{ page.year }} · [arXiv]({{ page.paper_url }}) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
