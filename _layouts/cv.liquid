@@ -10,7 +10,11 @@ layout: default
         <p class="research-cv__position">{{ cv.position | escape }}</p>
       </div>
       {% if page.cv_pdf %}
-        <a class="research-cv__download" href="{{ page.cv_pdf | prepend: '/assets/pdf/' | relative_url }}" download>Download CV (PDF)</a>
+        <a
+          class="research-cv__download"
+          href="{{ page.cv_pdf | prepend: '/assets/pdf/' | relative_url }}"
+          download="aliasghar-pourghani-cv.pdf"
+        >Download CV (PDF)</a>
       {% endif %}
     </div>
     <p class="research-cv__focus">{{ cv.focus | escape }}</p>
