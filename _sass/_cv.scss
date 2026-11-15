@@ -213,3 +213,175 @@ ul.timeline li::before {
      color: var(--global-text-color);
 }
 */
+
+// Research CV
+.research-cv {
+  --cv-accent: #173554;
+  --cv-muted: #536270;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+
+  p {
+    margin: 0;
+  }
+
+  h1 {
+    margin: 0 0 0.35rem;
+    font-size: clamp(1.9rem, 4.5vw, 2.65rem);
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+  }
+
+  h2 {
+    margin: 0 0 1rem;
+    color: var(--cv-accent);
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+
+    a {
+      color: inherit;
+    }
+  }
+
+  a {
+    color: var(--cv-accent);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__header {
+    padding-bottom: 1.65rem;
+  }
+
+  &__intro,
+  &__entry-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem 1.25rem;
+  }
+
+  &__intro {
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  &__position {
+    font-size: 1.02rem;
+  }
+
+  &__focus {
+    padding-top: 0.6rem;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem 1.25rem;
+    margin: 0.65rem 0 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.92rem;
+  }
+
+  &__download {
+    display: inline-block;
+    padding: 0.42rem 0.8rem;
+    border: 1px solid var(--cv-accent);
+    border-radius: 3px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  &__section {
+    padding: 1.35rem 0 1.5rem;
+    border-top: 1px solid var(--global-divider-color);
+  }
+
+  &__entries {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    > li + li {
+      margin-top: 1.05rem;
+    }
+
+    p {
+      margin-top: 0.2rem;
+    }
+  }
+
+  &__meta,
+  &__date,
+  &__citation,
+  &__coursework {
+    color: var(--cv-muted);
+    font-size: 0.91rem;
+  }
+
+  &__citation strong {
+    color: var(--cv-accent);
+  }
+
+  &__date {
+    white-space: nowrap;
+  }
+
+  &__contributions {
+    margin: 0.55rem 0 0;
+    padding-left: 1.2rem;
+
+    li + li {
+      margin-top: 0.4rem;
+    }
+  }
+
+  p.research-cv__coursework {
+    margin-top: 0.9rem;
+  }
+
+  &__skills {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.35rem 1.25rem;
+    margin: 0;
+
+    dt,
+    dd {
+      margin: 0;
+    }
+  }
+}
+
+html[data-theme="dark"] .research-cv {
+  --cv-accent: #bfd5ed;
+  --cv-muted: #b7c0cb;
+}
+
+@media (max-width: 575px) {
+  .research-cv {
+    &__entry-heading {
+      display: block;
+    }
+
+    &__skills {
+      grid-template-columns: minmax(0, 1fr);
+
+      dd + dt {
+        margin-top: 0.35rem;
+      }
+    }
+  }
+}
