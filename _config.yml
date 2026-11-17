@@ -73,10 +73,8 @@ gitlab_username: # your GitLab user name
 x_username: # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: amin-pourghani-aa42a9202 # your LinkedIn user name
-telegram_username: Amin_Pourghani # your Telegram user name
 scholar_userid: PWvTEYgAAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
-whatsapp_number: "17655324440" # your WhatsApp number, including country code, with digits only
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
