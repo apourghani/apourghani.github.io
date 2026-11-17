@@ -8,8 +8,8 @@ description: >-
   When the gain is unknown, we couple the recursion with an online gain estimator and prove the same guarantees under Markovian sampling, with a bound on the gain error.
 summary: >-
   We prove that temporal-difference updates for a quotient-categorical model of differential returns converge even when the average reward is estimated online.
-img: "https://arxiv.org/html/2605.11289v2/fig2_convergence.svg"
-img_alt: "Convergence of categorical temporal-difference learning in a five-state Markov decision process"
+img: "/assets/img/quotient-categorical-projection.png"
+img_alt: "Categorical projection with a translated grid and a fixed grid"
 importance: 2
 category: research
 featured: true
@@ -19,8 +19,8 @@ paper_url: https://arxiv.org/abs/2605.11289v2
 ---
 
 <figure>
-  <img class="img-fluid" src="{{ page.img }}" alt="{{ page.img_alt | escape }}">
-  <figcaption class="caption">Figure 2 · CC BY 4.0</figcaption>
+  <img class="img-fluid" src="{{ page.img | relative_url }}" alt="{{ page.img_alt | escape }}">
+  <figcaption class="caption">Figure 1, cropped from the paper · CC BY 4.0</figcaption>
 </figure>
 
 Ege C. Kaya, Aliasghar Pourghani, Vijay Gupta, and Abolfazl Hashemi
