@@ -70,8 +70,12 @@ education:
 skills:
   - area: Programming
     tools: Python, C/C++, Java
+  - area: LLMs
+    tools: Inference, evaluation, and on-policy distillation
   - area: ML and tools
     tools: PyTorch, TensorFlow, NumPy, pandas, PPO, MuJoCo, Docker, Linux
+  - area: Soft skills
+    tools: Teamwork, team building, independent work, self-motivation
 
 honors:
   - title: Silver Medal, Iranian National Mathematics Olympiad
