@@ -13,8 +13,6 @@ profile:
     <p>Electrical Engineering Building<br>465 Northwestern Ave<br>West Lafayette, IN 47907-2035, USA</p>
     <p><a href="mailto:apourgha@purdue.edu">apourgha@purdue.edu</a></p>
     <p><a href="mailto:apourghani@gmail.com">apourghani@gmail.com</a></p>
-    <p><a href="tel:+17655324440">+1 (765) 532-4440</a></p>
-    
 
 news: true # includes a list of news items
 featured_research: true
